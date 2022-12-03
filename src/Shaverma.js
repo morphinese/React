@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Shaverma = ({ id, image, info, name, removeShavermas }) => {
+const Shaverma = ({ id, image, info, name, removeShaverma }) => {
     return (
         <article className='single-tour'>
             <img src={image} alt={name} />
@@ -9,7 +9,10 @@ const Shaverma = ({ id, image, info, name, removeShavermas }) => {
                     <h4>{name}</h4>
                 </div>
                 <p>{info}</p>
-                <button className='delete-btn' onClick={() => removeShavermas(id)}>
+                <button
+                    className='delete-btn'
+                    onClick={() => removeShaverma(id)}
+                >
                     Не цікаво
                 </button>
             </footer>

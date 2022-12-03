@@ -1,7 +1,7 @@
 import React from 'react'
 import Shaverma from './Shaverma'
 
-const Shavermas = ({ shavermas, removeShavermas }) => {
+const Shavermas = ({ shavermas, removeShaverma }) => {
     return (
         <section>
             <div className='title'>
@@ -11,7 +11,7 @@ const Shavermas = ({ shavermas, removeShavermas }) => {
             <div className='list'>
                 {shavermas.map((shaverma) => {
                     return (
-                        <Shaverma key={shaverma.id} {...shaverma} removeShavermas={removeShavermas} />
+                        <Shaverma key={shaverma.id} {...shaverma} removeShaverma={removeShaverma} />
                     )
                 })}
             </div>
