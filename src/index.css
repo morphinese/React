@@ -10,8 +10,8 @@
     --radius: 0.25rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --max-width: 1170px;
-    --fixed-width: 620px;
+    --max-width: 1440px;
+    --fixed-width: 1200px;
 }
 * {
     margin: 0;
@@ -54,6 +54,7 @@ main {
     max-width: var(--fixed-width);
     margin: 5rem auto;
 }
+
 .title {
     text-align: center;
     margin-bottom: 4rem;
@@ -65,7 +66,15 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .single-tour {
+    flex: 0 0 450px;
     background: var(--clr-white);
     border-radius: var(--radius);
     margin: 2rem 0;

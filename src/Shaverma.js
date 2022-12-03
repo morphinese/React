@@ -1,16 +1,15 @@
 import React from 'react'
 
-const Tour = ({ id, image, info, price, name, removeTour }) => {
+const Shaverma = ({ id, image, info, name, removeShavermas }) => {
     return (
         <article className='single-tour'>
             <img src={image} alt={name} />
             <footer>
                 <div className='tour-info'>
                     <h4>{name}</h4>
-                    <h4 className='tour-price'>${price}</h4>
                 </div>
                 <p>{info}</p>
-                <button className='delete-btn' onClick={() => removeTour(id)}>
+                <button className='delete-btn' onClick={() => removeShavermas(id)}>
                     Не цікаво
                 </button>
             </footer>
@@ -18,4 +17,4 @@ const Tour = ({ id, image, info, price, name, removeTour }) => {
     )
 }
 
-export default Tour
+export default Shaverma
